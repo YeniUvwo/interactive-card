@@ -1,0 +1,334 @@
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 450px 1000px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+}
+.left-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 10px;
+}
+img{
+    width: 300px;
+    height: 160px;
+}
+.card-front, .card-back{
+    color: hsl(0, 0%, 95%);
+    position: relative;
+}
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin-right: 130px;
+}
+.image-icon img{
+    width: 50px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    position: absolute;
+    padding: 20px 0px;
+}
+.card-number{
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+}
+.name-expiry{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 13em;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+}
+.cvc-no{
+    font-size: 0.6em;
+    position: absolute;
+    top: 75px;
+    right: 40px;
+    
+}
+.design-state{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 330px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.other-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.card-name{
+   font-size: 0.55em;
+   font-size: bold;
+   letter-spacing: 0.1em;
+   margin-bottom: 3px;
+   color: hsl(278, 68%, 11%);
+}
+input{
+    all: unset;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+input:hover{
+    border-color: hsl(278, 94%, 30%);
+}
+.name-input{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 85%);
+    padding-left: 10px;
+}
+::placeholder{
+    font-size: 0.7em;
+    color: hsl(0, 0%, 75%);
+}
+.year-input{
+    width: 45px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 85%);
+    padding-left: 10px;
+}
+.cvc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 7px;
+}
+.cvc-input{
+    width: 115px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 85%);
+    padding-left: 10px;
+}
+.error-message{
+    font-size: 0.5em;
+    color: hsl(0, 100%, 66%);
+    margin-top: 5px;
+    display: none;
+}
+.input-error{
+    border-color: hsl(0, 100%, 66%);;
+}
+p{
+    margin-bottom: 0px;
+}
+.btn{
+    font-size: 0.8em;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%);
+    width: 100%;
+    height: 38px;
+}
+.btn:hover{
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%);
+}
+.thankyou-state{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.thankyou-flex{
+    display: flex;
+}
+.thankyou-state img{
+    width: 60px;
+    height: 60px;
+}
+h1{
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    width: 330px;
+    text-align: center;
+}
+p{
+    font-size: 0.8em;
+    color: hsl(279, 6%, 55%);
+    margin-bottom: 0px;
+}
+.btn{
+    font-size: 0.8em;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%);
+    width: 270px;
+    height: 38px;
+    margin-top: 15px;
+}
+.btn:hover{
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 650px){
+    body{
+        background-image: url(images/bg-main-mobile.png);
+        background-position: top;
+        background-size: 650px 220px;
+    }
+    .container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .main{
+        flex-direction: column;
+        gap: 2.5em;
+    }
+    .left-box{
+        margin-top: 40px;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    img{
+        width: 250px;
+        height: 140px;
+    }
+    .card-back{
+        margin-right: -40px;
+        z-index: 1;
+    }
+    .card-front {
+        margin-right: 70px;
+        margin-top: -61px;
+        z-index: 2;
+    }
+    .image-icon img{
+        width: 50px;
+        height: 30px;
+    }
+    .card-info{
+        gap: 0.5em;
+        padding: 0px 10px 0px 10px;
+    }
+    .card-number{
+        font-size: 1em;
+    }
+    .name-expiry{
+        gap: 12.8em;
+        font-size: 0.5em;
+    }
+    .cvc-no{
+        font-size: 0.6em;
+        top: 63px;
+        right: 40px;
+    }
+    .design-state{
+        align-items: flex-start;
+        gap: 0.5em;
+        width: 330px;
+        padding: 10px;
+        margin-top: -13px;
+    }
+    .other-content{
+        gap: 0;
+        margin-top: -5px;
+    }
+    .card-name{
+       font-size: 0.75em;
+       margin-bottom: 3px;
+    }
+    input{
+        font-size: 1em;
+        margin-top: 3px;
+        margin-bottom: 7px;
+    }
+    .name-input{
+        width: 280px;
+        height: 37px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+    ::placeholder{
+        font-size: 0.85em;
+    }
+    .year-input{
+        width: 45px;
+        height: 37px;
+        margin-top: 3px;
+        margin-right: 3px;
+        border-radius: 7px;
+    }
+    .cvc{
+        margin-top: 4px;
+        margin-left: 5px;
+    }
+    .cvc-input{
+        width: 148px;
+        height: 37px;
+    }
+    .thankyou-state{
+        margin-top: 30px;
+    }
+    .thankyou-flex{
+        display: flex;
+    }
+    .btn{
+        width: 95%;
+        height: 38px;
+        margin-top: 25px;
+    }
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        margin-top: 40px;
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
